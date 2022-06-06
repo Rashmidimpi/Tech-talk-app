@@ -1,0 +1,9 @@
+<br>
+<div class="todoContainer">
+  <div class="singleLine todoHeader">
+    <span class="headerLabel">Your Tasks</span>  
+    <button mat-stroked-button class="addBtn" (click)="openAddPopup()">+</button></div>
+  <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+    <app-singletask *ngFor="let eachTask of localtaskList" [taskObject]="eachTask"></app-singletask>
+  </div>
+</div>

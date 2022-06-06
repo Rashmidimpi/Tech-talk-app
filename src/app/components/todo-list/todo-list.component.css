@@ -1,0 +1,57 @@
+.todoContainer
+{
+    width:55%;
+    margin: 0 auto;
+    font-size:1.4em;
+    box-shadow: 0px 0px 10px 2px #bebebe;
+    white-space: nowrap;
+    height:auto;
+}
+
+.todoContainer .todoHeader
+{
+    vertical-align: middle;
+    background-color: #b7a670;
+    padding-top:4px;
+    padding-bottom:4px;
+    color: #ffffff;
+}
+
+.mat-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button {
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    border-radius: 4px;
+    overflow: visible;
+}
+
+.headerLabel
+{
+    display: inline;
+    margin-left:5px;
+}
+
+.addBtn
+{
+    display: inline;
+    float:right;
+    font-size: 1.0em;
+}
+
+.mat-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button
+{
+    line-height: 26px;
+}

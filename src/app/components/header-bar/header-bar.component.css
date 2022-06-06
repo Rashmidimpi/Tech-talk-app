@@ -1,0 +1,46 @@
+.headerDiv
+{
+    width:100%;
+    font-size:20px;
+    letter-spacing:6px;
+    background-color: #33045B;
+    color: white;
+    text-align: center;
+    vertical-align: middle ;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+
+.navigatorSwitch
+{
+    display:inline-block;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.navigatorSwitch-todo
+{
+    background-color: #AC6C00;
+}
+
+.navigatorSwitch-counter
+{
+    background-color: #7a922a;
+}
+
+.navigatorSwitch-todo:hover
+{
+    background-color: black;
+    color: #AC6C00;
+    transition: background-color 500ms linear;
+}
+
+.navigatorSwitch-counter:hover
+{
+    background-color: black;
+    color:#7a922a;
+    transition: background-color 500ms linear;
+}

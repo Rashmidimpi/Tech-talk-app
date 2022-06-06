@@ -1,0 +1,12 @@
+<div class="task-box">
+    <mat-list>
+        <mat-list-item>
+            <h3 matLine>{{taskObject.taskTitle}}</h3>
+            <p matLine>
+                <span class="text-italic" style="font-size:0.8em">Created by {{taskObject.taskAuthor}}</span>
+            </p>
+        </mat-list-item>
+    </mat-list>
+    
+    <app-priority-tag priorityLevel={{taskObject.taskPriority}}></app-priority-tag>
+</div>

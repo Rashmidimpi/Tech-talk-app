@@ -1,0 +1,24 @@
+<p>Editing Task</p>
+<form [formGroup]="taskEditForm" (ngSubmit)="submitEdit()" novalidate>
+    
+    <input type="text" class="form-control" id="title"
+    formControlName="editTitle"> 
+    
+    <input type="text" class="form-control" id="author"
+    formControlName="editAuthor"> 
+    
+    <select class="form-control" id="priority" formControlName="editPriority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+    </select>
+
+    <button type="submit" [disabled]="getControl.editTitle.errors || getControl.editAuthor.errors || getControl.editPriority.errors">Save</button>
+
+    <div class="validatorMessageArea">
+        <span class="singleLine validatorMessage" *ngIf="getControl.editTitle.errors && getControl.editTitle.errors.required">Title is required!</span>
+        <span class="singleLine validatorMessage" *ngIf="getControl.editTitle.errors && getControl.editTitle.errors.minlength">Title should be atleast 4 characters long!</span>
+        <span class="singleLine validatorMessage" *ngIf="getControl.editAuthor.errors && getControl.editAuthor.errors.required">Author is required!</span>
+        <span class="singleLine validatorMessage" *ngIf="getControl.editPriority.errors && getControl.editPriority.errors.required">Priority is required!</span>
+    </div>
+</form>

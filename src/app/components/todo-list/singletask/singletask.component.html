@@ -1,0 +1,22 @@
+<div class="task-box" cdkDrag>
+    <mat-list>
+        <mat-list-item>
+            <h3 matLine>{{taskObject.title}}</h3>
+            <p matLine>
+                <span class="text-italic" style="font-size:0.8em">Created by {{taskObject.author}}</span>
+            </p>
+        </mat-list-item>
+    </mat-list>
+    
+    <app-priority-tag priorityLevel={{taskObject.priority}}></app-priority-tag>
+    
+    <div class="edit-delete-div">
+        <button mat-button color="primary" class="button-edit" (click)="openEditDialogue()">
+            <mat-icon>edit</mat-icon>
+        </button>
+        
+        <button mat-button color="warn" class="button-delete" (click)="openDeleteDialogue()">
+            <mat-icon>delete</mat-icon>
+        </button>
+    </div>
+</div>

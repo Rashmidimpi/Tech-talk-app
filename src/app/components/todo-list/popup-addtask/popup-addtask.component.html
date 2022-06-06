@@ -1,0 +1,24 @@
+<p>Creating new Task</p>
+<form [formGroup]="taskCreateForm" (ngSubmit)="submitCreate()">
+    
+    <input type="text" class="form-control" id="title"
+    formControlName="createTitle"> 
+    
+    <input type="text" class="form-control" id="author"
+    formControlName="createAuthor"> 
+    
+    <select class="form-control" id="priority" formControlName="createPriority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+    </select>
+
+    <button type="submit" [disabled]="getControl.createTitle.errors || getControl.createAuthor.errors || getControl.createPriority.errors">Save</button>
+
+    <div class="validatorMessageArea">
+        <span class="singleLine validatorMessage" *ngIf="getControl.createTitle.errors && getControl.createTitle.errors.required">Title is required!</span>
+        <span class="singleLine validatorMessage" *ngIf="getControl.createTitle.errors && getControl.createTitle.errors.minlength">Title should be atleast 4 characters long!</span>
+        <span class="singleLine validatorMessage" *ngIf="getControl.createAuthor.errors && getControl.createAuthor.errors.required">Author is required!</span>
+        <span class="singleLine validatorMessage" *ngIf="getControl.createPriority.errors && getControl.createPriority.errors.required">Priority is required!</span>
+    </div>
+</form>

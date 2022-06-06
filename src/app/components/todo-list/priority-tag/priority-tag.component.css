@@ -1,0 +1,23 @@
+.priorityLow-marker
+{
+    color: white;
+    border-radius:4px;
+    background-color:#008000;
+    padding:4px;
+}
+
+.priorityMedium-marker
+{
+    color: white;
+    border-radius:4px;
+    background-color:#0000ff;
+    padding:4px;
+}
+
+.priorityHigh-marker
+{
+    color: white;
+    border-radius:4px;
+    background-color:#ff0000;
+    padding:4px;
+}

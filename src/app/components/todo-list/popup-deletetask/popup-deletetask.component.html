@@ -1,0 +1,7 @@
+<p>Are you sure you want to delete the following task?</p>
+<app-task-overview [taskObject]="taskData"></app-task-overview>
+<br>
+<div class="confirmDeleteiv">
+    <button mat-raised-button color="primary" (click)="closeDeleteDialogue()">Cancel</button>
+    <button mat-raised-button (click)="deleteTask()">Yes</button>
+</div>
